@@ -23,8 +23,8 @@ public:
     }
 };
 
-void bsort(Person**, int);
-void order(Person**, Person**);
+void bsort(Person** pp, int n);
+void order(Person** pp1, Person** pp2);
 
 int main() {
     
@@ -63,8 +63,6 @@ int main() {
 //тут он сортирует по алфавиту!!!
 
 void bsort(Person** pp, int n) {
-    
-
     for (int i = 0; i < n - 1; i++)
     {
         for (int j = i + 1; j < n; j++)
