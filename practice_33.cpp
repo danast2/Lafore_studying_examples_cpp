@@ -24,18 +24,7 @@ public:
     void display(); // показ данных
 };
 
-// нормальная очистка памяти
-/*Linklist::~Linklist() // деструктор
-{
-    link* current = first;
-    while (current!=NULL)  //т.е. пока не дойдем до конца списка (ласт элемент содержит ссылку на NULL)
-    {
-        link* temp = current; // сохранить указатель на элемент
-        current = current->next_ptr; // получить следующую ссылку
-        delete temp; // удалить эту ссылку
-    }
-
-}*/
+//реализовать нормальную очистку памяти (красивый деструктор)
 
 bool Linklist::is_empty(){
     return first == nullptr;
