@@ -19,9 +19,14 @@ int main() {
 
     for (int i = 0; i < NUMARRAYS; ++i) {
         for (int j = 0; j < MAXSIZE; ++j) {
-            std::cout << ptrList[i][j] << '\t';
+            std::cout << *(*(ptrList + i) + j) << '\t';
         }
         std::cout << std::endl;
     }
+
+    for (int i = 0; i < NUMARRAYS; ++i) {
+        delete [] ptrList[i];
+    }
+    delete[] ptrList;
     return 0;
 }
