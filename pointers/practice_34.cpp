@@ -45,9 +45,7 @@ int Linklist::sumTheTreeValues(link *root) {
     if (root == nullptr)
         return 0;
     else
-        return root->
-
-        data_variable + sumTheTreeValues(root->next_ptr);
+        return root->data_variable + sumTheTreeValues(root->next_ptr);
 }
 
 void Linklist::display()
